@@ -1,4 +1,7 @@
-#!/bin/bash
+#!/usr/bin/env bash
+
+set -e
+
 cmd=$(zenity --list --title "rigel DEマネージャー" --text="DEを選択してください。数分であなたに最適なデスクトップを提供します！" --column "操作" xfce GNOME KDE deepin )
 
 if [ $cmd = 'xfce' ]; then
